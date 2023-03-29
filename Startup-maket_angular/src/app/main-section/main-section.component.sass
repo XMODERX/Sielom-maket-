@@ -34,28 +34,103 @@ section
                 @extend %style-a
         .categories-main
             display: flex
-            width: 800px
+            width: 820px
             .cat-inner
                 width: 100%
                 display: flex
                 justify-content: space-between
                 .cat-elements
                     display: flex
+                    position: relative
                     flex-direction: column
                     width: 241px
                     height: 322px
+                    .cat-like
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        z-index: 7
+                        top: 26px
+                        right: 20px
+                        background: rgba(255, 255, 255, 0.6)
+                        backdrop-filter: blur(25px)
+                        border-radius: 100%
+                        position: absolute
+                        width: 46px
+                        height: 46px
+                        button
+                            width: 20px
+                            height: 18px
+                            box-shadow: none
+                            outline: none
+                            background: #b7e9ec
+                            backdrop-filter: blur(25px)
+                            border: none
+                        .like-red
+                            position: absolute
+                            display: none
+                            z-index: 9
+                        .like1, .like2
+                            background: #feedd9
+                            display: flex
+                        .like3
+                            background: #a3a9bf
+                        .like:hover~ .like-red
+                            transition: 0.7s
+                            display: flex
+                        .like:focus~ .like-red
+                            display: flex
+
                 .cat-photo
+                    width: 241px
+                    height: 322px
                     margin-bottom: 21px
                     border-radius: 33px
-                    box-shadow: 14px 3px 93px 14px rgba(53, 196, 213, 0.2)
                     transition: 0.6s
-                .cat-photo:hover
+                    background-color: #F2F8FD
+                    img
+                        z-index: 6
+                        width: 241px
+                        height: 322px
+
+                .elem1
                     transition: 0.5s
+                    box-shadow: 14px 3px 93px 14px rgba(53, 196, 213, 0.2)
+                .elem1:hover
+                    width: 241px
+                    height: 322px
                     box-shadow: 14px 3px 93px 29px rgba(53, 196, 213, 0.48)
+                    transition: 0.5s
+                .elem2
+                    box-shadow: 4px 4px 84px 42px rgba(255, 132, 0, 0.14)
+                .elem2:hover
+                    box-shadow: 4px 4px 84px 55px rgba(254, 112, 0, 0.18)
+                .elem3
+                    box-shadow: 4px 4px 84px 29px rgba(83, 103, 201, 0.24)
+                .elem3:hover
+                    box-shadow: 4px 4px 84px 59px rgba(83, 103, 201, 0.27)
+                .cat-photo
+                    transition: 0.5s
+                    img:hover
+                        transition: 0.5s
+                        transform: scale(1.1)
                 h5
+                    margin-bottom: 7px
                     font-family: 'Baloo 2'
                     font-style: normal
                     font-weight: 500
                     font-size: 22px
                     line-height: 35px
                     color: #18333E
+                .city
+                    max-width: 170px
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                    p
+                        font-family: 'Baloo 2'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 26px
+                        color: #18333E
