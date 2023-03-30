@@ -7,12 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { LeftsideBarComponent } from './leftside-bar/leftside-bar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LeftsideBarComponent,
-    MainSectionComponent
+    MainSectionComponent,
   ],
   imports: [
     BrowserModule,

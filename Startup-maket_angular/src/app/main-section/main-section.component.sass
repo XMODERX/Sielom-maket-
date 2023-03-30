@@ -14,13 +14,16 @@
     color: #18333E
 
 section
-    width: 800px
+    width: 820px
+    height: 100%
     display: flex
     margin-left: 41px
+    flex-direction: column
     .categories
         display: flex
-        flex-direction: column
+        height: 540px
         max-width: 100%
+        flex-direction: column
         h4
             @extend %style-h4
             margin-bottom: 18px
@@ -34,6 +37,7 @@ section
                 @extend %style-a
         .categories-main
             display: flex
+            flex-direction: column
             width: 820px
             .cat-inner
                 width: 100%
@@ -134,3 +138,31 @@ section
                         font-size: 16px
                         line-height: 26px
                         color: #18333E
+    .event-block
+        margin-top: 50px
+        .main-info
+            display: flex
+            justify-content: space-between
+            h5
+                font-family: 'Baloo 2'
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 48px
+                color: #18333E
+            .event-date
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 175px
+                height: 48px
+                border: 1px solid #B4BCC4
+                border-radius: 24px
+                a
+                    text-decoration: none
+                    font-family: 'Baloo 2'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 26px
+                    color: #18333E
