@@ -14,14 +14,14 @@
     color: #18333E
 
 section
-    width: 820px
+    width: 1000px
     height: 100%
     display: flex
     margin-left: 41px
     flex-direction: column
     .categories
         display: flex
-        height: 540px
+        height: 520px
         max-width: 100%
         flex-direction: column
         h4
@@ -31,14 +31,14 @@ section
             display: flex
             justify-content: space-between
             width: 350px
-            margin-bottom: 37px
+            margin-bottom: 25px
             a
                 text-decoration: none
                 @extend %style-a
         .categories-main
             display: flex
             flex-direction: column
-            width: 820px
+            width: 1000px
             .cat-inner
                 width: 100%
                 display: flex
@@ -139,7 +139,7 @@ section
                         line-height: 26px
                         color: #18333E
     .event-block
-        margin-top: 50px
+        margin-top: 25px
         .main-info
             display: flex
             justify-content: space-between
@@ -166,3 +166,79 @@ section
                     font-size: 16px
                     line-height: 26px
                     color: #18333E
+        .date
+            margin-top: 20px
+            width: 800px
+            display: flex
+            ul
+                width: 100%
+                display: flex
+                justify-content: space-between
+                list-style-type: none
+                li
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-evenly
+                    border-radius: 32px
+                    width: 64px
+                    height: 100px
+                    font-family: 'Baloo 2'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 25px
+                    line-height: 40px
+                    color: #18333E
+                    p
+                        font-family: 'Baloo 2'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 26px
+                li:hover
+                    color: #FFFFFF
+                    background-color: #18333E
+                    .yel-dot
+                        transition: 0.4s
+                        background-color: #F9D44A
+                        border-radius: 13.5px
+                        width: 5px
+                        height: 8px
+        .date-pic
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            .date-big-picture
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 23px
+                width: 570px
+                height: 80px
+                background: #18333E
+                border-radius: 25px
+                img
+                    border-radius: 10px
+                .date-big-text
+                    margin-right: 200px
+                    p
+                        font-family: 'Baloo 2'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 18px
+                        line-height: 29px
+                        color: #FFFFFF
+                .text-rate
+                    display: flex
+                    p
+                        font-family: 'Baloo 2'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 22px
+                        color: #FFFFFF
+            .date-min-picture
+                display: flex
+                width: 118px
+                height: 119px
+                border-radius: 25px
