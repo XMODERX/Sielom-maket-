@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LeftsideBarComponent } from './leftside-bar/leftside-bar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
+import { RightsideBarComponent } from './rightside-bar/rightside-bar.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MainSectionComponent } from './main-section/main-section.component';
     HeaderComponent,
     LeftsideBarComponent,
     MainSectionComponent,
+    RightsideBarComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,82 @@
+section
+    display: flex
+    flex-direction: column
+    min-width: 400px
+    .right-side-collage
+        position: relative
+        display: flex
+        justify-content: center
+        width: 395px
+        height: 290px
+        border-radius: 30px
+    .collage-min
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        position: absolute
+        top: 200px
+        background: rgba(255, 255, 255, 0.32)
+        backdrop-filter: blur(2.5px)
+        border-radius: 15px
+        width: 326px
+        height: 71px
+        img
+            width: 64px
+            height: 46.37px
+    .cat-like
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 7
+        top: 20px
+        right: 20px
+        background: rgba(255, 255, 255, 0.6)
+        backdrop-filter: blur(25px)
+        border-radius: 100%
+        position: absolute
+        width: 46px
+        height: 46px
+        button
+            width: 20px
+            height: 18px
+            box-shadow: none
+            outline: none
+            background: #b7e9ec
+            backdrop-filter: blur(25px)
+            border: none
+        .like-red
+            position: absolute
+            display: none
+            z-index: 9
+        .like1, .like2
+            background: #feedd9
+            display: flex
+        .like4
+            background: #edfcdb
+        .like:hover~ .like-red
+            transition: 0.7s
+            display: flex
+        .like:focus~ .like-red
+            display: flex
+    .right-side-text
+        display: flex
+        flex-direction: column
+        margin-top: 20px
+        div
+            display: flex
+            justify-content: space-between
+            h5
+                font-family: 'Baloo 2'
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 48px
+                color: #18333E
+        p
+            font-family: 'Baloo 2'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 26px
+            color: #18333E
+            opacity: 0.7
